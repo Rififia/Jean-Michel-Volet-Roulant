@@ -1,0 +1,4 @@
+# Interface
+This will simulate the end-user interface and the connection with the command-unit (here it is with COM ports, emulated through Virtual Series Port Tool from HHD Software).
+A schema explains how the interface would looks like in reality and how it would be connected to the command-unit. A protocol will be defined for the communication between the command interface and the central command unit.
+It will also gives something to emulate the Arduino slave, sending data (that you can change) and displaying the order received from the command-unit, telling wether the curtains are opened or not.
