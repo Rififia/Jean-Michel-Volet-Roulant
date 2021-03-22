@@ -16,24 +16,24 @@
    @description The pins for the RGB Led (Red, Green, Blue).
    @type {int[3]}
 */
-int RGBPins[3] = {5, 6, 7},
-    /**
-       @global
-       @var tempSensorPin
-       @description The pin for the temperature sensor.
-       @type {int}
-    */
-    tempSensorPin = A0,
-    /**
-       @global
-       @var lightSensorPin
-       @description Tha pin for the light sensor.
-       @type {int}
-    */
-    lightSensorPin = A1;
+int RGBPins[3] = {1, 2, 3},
+	/**
+		@global
+		@var tempSensorPin
+		@description The pin for the temperature sensor.
+		@type {int}
+	*/
+	tempSensorPin = A0,
+	/**
+		@global
+		@var lightSensorPin
+		@description Tha pin for the light sensor.
+		@type {int}
+	*/
+	lightSensorPin = A1;
 
 // I guess you don't use Tinkercad
-#define IN_TINKERCAD 1
+#define IN_TINKERCAD 0
 
 // Stop changing here until told otherwise...
 #define NONE 0
@@ -253,7 +253,7 @@ class ShuttersManager {
 
 #if IN_TINKERCAD
       delay(200);
-#endif;
+#endif
 
       for (int i = 0; i < NUMBER_OF_SHUTTERS; i++)
         ShutterObjs[i].open();
@@ -271,7 +271,7 @@ class ShuttersManager {
 
 #if IN_TINKERCAD
       delay(200);
-#endif;
+#endif
 
       for (int i = 0; i < NUMBER_OF_SHUTTERS; i++)
         ShutterObjs[i].close();
@@ -392,9 +392,9 @@ void sendData() {
    @type {Shutter[NUMBER_OF_SHUTTERS]}
 */
 Shutter ShutterObjs[NUMBER_OF_SHUTTERS] = {
-  Shutter(2, 8), //pin, size
-  Shutter(3, 10),
-  Shutter(4, 16)
+  Shutter(4, 8), //pin, size
+  Shutter(5, 10),
+  Shutter(6, 16)
 };
 // ...and defintely stop changing from here!
 
@@ -426,7 +426,7 @@ void setup() {
 
 #if IN_TINKERCAD
   delay(200); // For demo purpose
-#endif;
+#endif
 
   // Serial communication:
   Serial.begin(9600);
@@ -477,5 +477,5 @@ void loop() {
 
 #if IN_TINKERCAD
   delay(250);
-#endif;
+#endif
 }
