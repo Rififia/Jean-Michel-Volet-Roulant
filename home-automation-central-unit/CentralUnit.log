@@ -1,0 +1,418 @@
+2021-05-03:17:38:57: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-03:17:38:59: (arduino-com/status) CONNECT received
+2021-05-03:17:38:59: (arduino-com/status) Sending signal
+2021-05-03:17:38:59: (arduino-com/status) Sent a signal
+2021-05-03:17:38:59: (arduino-com/status) Waiting for READY
+2021-05-03:17:38:59: (arduino-com/status) READY received !
+2021-05-03:17:39:00: (core/shutters/debug) Got 24.71°C and 435.17lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:39:10: (core/shutters/debug) Got 23.73°C and 431.79lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:39:10: (core/status) shutting down
+2021-05-03:17:39:44: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-03:17:39:46: (arduino-com/status) CONNECT received
+2021-05-03:17:39:46: (arduino-com/status) Sending signal
+2021-05-03:17:39:46: (arduino-com/status) Sent a signal
+2021-05-03:17:39:46: (arduino-com/status) Waiting for READY
+2021-05-03:17:39:46: (arduino-com/status) READY received !
+2021-05-03:17:39:46: (core/shutters/debug) Got 24.71°C and 435.17lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:39:56: (core/shutters/debug) Got 23.73°C and 435.17lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:40:07: (core/shutters/debug) Got 23.24°C and 428.43lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:40:07: (core/cmd/status) user_mode is 1
+2021-05-03:17:40:07: (core/cmd/status) sunrise_hour is 7
+2021-05-03:17:40:07: (core/cmd/status) adapt_with_temp_in_plain_day is True
+2021-05-03:17:40:07: (core/cmd/error) command "get_setting user_mode2": arg error: argument name: invalid choice: 'user_mode2' (choose from 'user_mode', 'sunrise_hour', 'sunset_hour', 'low_light_threshold', 'low_temp_threshold', 'high_temp_threshold', 'adapt_with_temp_in_plain_day'), see documentation
+2021-05-03:17:40:07: (core/cmd/status) low_light_threshold is 100
+2021-05-03:17:40:17: (core/shutters/debug) Got 24.22°C and 405.67lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:40:27: (core/shutters/debug) Got 24.22°C and 396.28lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:40:37: (core/shutters/debug) Got 24.22°C and 435.17lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:40:48: (core/shutters/debug) Got 23.24°C and 435.17lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:40:48: (core/cmd/error) command "get_command user_mode": syntax error: argument command: invalid choice: 'get_command' (choose from 'set_setting', 'get_setting', 'shutdown'), see documentation
+2021-05-03:17:40:48: (core/status) shutting down
+2021-05-03:17:43:05: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-03:17:43:07: (arduino-com/status) CONNECT received
+2021-05-03:17:43:07: (arduino-com/status) Sending signal
+2021-05-03:17:43:07: (arduino-com/status) Sent a signal
+2021-05-03:17:43:07: (arduino-com/status) Waiting for READY
+2021-05-03:17:43:07: (arduino-com/status) READY received !
+2021-05-03:17:43:08: (core/shutters/debug) Got 24.22°C and 435.17lux. We're on the 17th hour, it is considered plain day.
+2021-05-03:17:43:10: (core/cmd/error) command "get_command user_mode": syntax error: argument command: invalid choice: 'get_command' (choose from 'set_setting', 'get_setting', 'shutdown'), see documentation
+2021-05-03:17:43:10: (core/status) shutting down
+2021-05-10:16:36:10: (core/error) error: Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 62, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+
+
+2021-05-10:16:36:10: (core/error) error: Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 196, in loop
+    self.update_shutters()
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 215, in update_shutters
+    self.automatic_shutters(**self.check_luminosity_and_temp())
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 220, in check_luminosity_and_temp
+    ans = self.arduino.ask(str(self.ARDUINO_GET_ENV), 2, line_ending="")
+AttributeError: 'CentralUnit' object has no attribute 'arduino'
+
+
+2021-05-10:16:36:10: (core/status) shutting down
+
+2021-05-10:16:38:14: (core/init/error) error: Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 62, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+
+
+2021-05-10:16:38:14: (core/status) shutting down
+
+2021-05-10:16:38:29: (core/init/error) error: Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 62, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+
+
+2021-05-10:16:38:29: (core/status) shutting down
+
+2021-05-10:16:42:52: (arduino-com/status) Waiting for Arduino's CONNECT
+
+2021-05-10:16:43:22: (core/init/error) error: Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 62, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 31, in __init__
+    raise ConnectionError("failed to connect to Arduino")
+ConnectionError: failed to connect to Arduino
+
+
+2021-05-10:16:43:22: (core/status) shutting down
+
+2021-05-11:09:06:28: (arduino-com/status) Waiting for Arduino's CONNECT
+
+2021-05-11:09:06:58: (core/init/error) error: Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 62, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 31, in __init__
+    raise ConnectionError("failed to connect to Arduino")
+ConnectionError: failed to connect to Arduino
+
+
+2021-05-11:09:06:58: (core/status) shutting down
+
+2021-05-11:09:07:33: (arduino-com/status) Waiting for Arduino's CONNECT
+
+2021-05-11:09:07:35: (arduino-com/status) CONNECT received
+
+2021-05-11:09:07:35: (arduino-com/status) Sending signal
+
+2021-05-11:09:07:35: (arduino-com/status) Sent a signal
+
+2021-05-11:09:07:35: (arduino-com/status) Waiting for READY
+
+2021-05-11:09:07:35: (arduino-com/status) READY received !
+
+2021-05-11:09:07:35: (core/shutters/debug) Got 21.78°C and 14.51lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:07:45: (core/shutters/debug) Got 21.78°C and 14.07lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:07:50: (core/cmd/error) command "verfezfzef": syntax error: argument command: invalid choice: 'verfezfzef' (choose from 'set_setting', 'get_setting', 'shutdown'), see documentation
+
+2021-05-11:09:07:56: (core/shutters/debug) Got 20.8°C and 10.46lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:08:06: (core/shutters/debug) Got 20.8°C and 12.03lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:08:10: (core/cmd/error) command "set_setting user_mode 1": arg error: unrecognized arguments: user_mode 1, see documentation
+
+2021-05-11:09:08:16: (core/shutters/debug) Got 21.78°C and 10.96lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:08:24: (core/cmd/status) user_mode now has 1 for value
+
+2021-05-11:09:08:26: (core/shutters/debug) Got 21.29°C and 11.57lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:08:33: (core/cmd/status) user_mode now has 3 for value
+
+2021-05-11:09:08:33: (core/shutters/status) Closing shutters
+
+2021-05-11:09:08:34: (core/shutters/status) Done closing shutters
+
+2021-05-11:09:08:37: (core/cmd/status) user_mode now has 2 for value
+
+2021-05-11:09:08:37: (core/shutters/status) Opening shutters
+
+2021-05-11:09:08:38: (core/shutters/status) Done openeing shutters
+
+2021-05-11:09:08:43: (core/cmd/status) user_mode now has 3 for value
+
+2021-05-11:09:08:43: (core/shutters/status) Closing shutters
+
+2021-05-11:09:08:44: (core/shutters/status) Done closing shutters
+
+2021-05-11:09:08:48: (core/cmd/status) user_mode now has 1 for value
+
+2021-05-11:09:08:48: (core/shutters/debug) Got 20.31°C and 11.04lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:08:48: (core/shutters/status) Opening shutters
+
+2021-05-11:09:08:49: (core/shutters/status) Done openeing shutters
+
+2021-05-11:09:08:59: (core/shutters/debug) Got 21.78°C and 17.23lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:09:09: (core/shutters/debug) Got 21.29°C and 17.5lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:09:19: (core/shutters/debug) Got 20.8°C and 11.94lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:09:30: (core/shutters/debug) Got 21.78°C and 12.71lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:09:40: (core/shutters/debug) Got 21.78°C and 12.13lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:09:50: (core/shutters/debug) Got 20.8°C and 13.53lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:10:00: (core/shutters/debug) Got 21.29°C and 12.42lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:10:10: (core/shutters/debug) Got 20.8°C and 12.51lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:10:21: (core/shutters/debug) Got 21.78°C and 12.71lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:10:31: (core/shutters/debug) Got 21.78°C and 13.21lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:10:41: (core/shutters/debug) Got 21.29°C and 12.71lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:10:51: (core/shutters/debug) Got 21.78°C and 13.01lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:11:02: (core/shutters/debug) Got 21.78°C and 14.4lux. We're on the 9th hour, it is considered plain day.
+
+2021-05-11:09:11:06: (core/status) shutting down
+
+2021-05-11:09:12:24: (core/init/error) error: Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 62, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+
+
+2021-05-11:09:12:24: (core/status) shutting down
+
+2021-05-11:09:17:41: (core/init/error) error: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 60, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+
+2021-05-11:09:17:41: (core/status) shutting down
+2021-05-11:09:18:33: (core/init/error) error: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 60, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2021-05-11:09:18:33: (core/status) shutting down
+2021-05-11:09:22:32: (core/init/error) error: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 60, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2021-05-11:09:22:32: (core/status) shutting down
+2021-05-11:09:22:47: (core/init/error) error: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 54, in __init__
+    self._init_arduino(**arduino_serial_args)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 60, in _init_arduino
+    self.arduino = ArduinoSerial(
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 14, in __init__
+    self.serial = serial.Serial(port=port, baudrate=baudrate,
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2021-05-11:09:22:47: (core/status) shutting down
+2021-05-11:09:23:02: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-11:09:23:03: (arduino-com/status) CONNECT received
+2021-05-11:09:23:03: (arduino-com/status) Sending signal
+2021-05-11:09:23:03: (arduino-com/status) Sent a signal
+2021-05-11:09:23:03: (arduino-com/status) Waiting for READY
+2021-05-11:09:23:03: (arduino-com/status) READY received !
+2021-05-11:09:23:04: (core/shutters/debug) Got 22.27°C and 0.18lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:23:14: (core/shutters/debug) Got 21.78°C and 19.07lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:23:24: (core/init/error) error: WriteFile failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 194, in loop
+    self.update_shutters()
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 212, in update_shutters
+    self.automatic_shutters(**self.check_luminosity_and_temp())
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 217, in check_luminosity_and_temp
+    ans = self.arduino.ask(str(self.ARDUINO_GET_ENV), 2, line_ending="")
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 125, in ask
+    self.send(msg, **send_kwargs)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 58, in send
+    self.serial.write(bytes(string + line_ending, encoding))
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+2021-05-11:09:23:24: (core/status) shutting down
+2021-05-11:09:23:38: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-11:09:23:40: (arduino-com/status) CONNECT received
+2021-05-11:09:23:40: (arduino-com/status) Sending signal
+2021-05-11:09:23:40: (arduino-com/status) Sent a signal
+2021-05-11:09:23:40: (arduino-com/status) Waiting for READY
+2021-05-11:09:23:40: (arduino-com/status) READY received !
+2021-05-11:09:23:41: (core/shutters/debug) Got 22.27°C and 18.77lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:23:51: (core/shutters/debug) Got 21.78°C and 18.63lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:24:01: (core/shutters/debug) Got 20.8°C and 18.92lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:24:11: (core/shutters/debug) Got 22.27°C and 0.18lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:24:21: (core/shutters/debug) Got 21.78°C and 18.05lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:24:32: (core/shutters/debug) Got 21.78°C and 17.64lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:24:42: (core/shutters/debug) Got 20.8°C and 17.91lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:24:52: (core/shutters/debug) Got 20.8°C and 18.05lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:25:02: (core/shutters/debug) Got 21.78°C and 17.36lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:25:13: (core/shutters/debug) Got 21.78°C and 17.64lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:25:23: (core/shutters/debug) Got 20.8°C and 17.64lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:25:33: (core/shutters/debug) Got 21.78°C and 18.05lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:25:43: (core/shutters/debug) Got 21.78°C and 17.64lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:25:53: (core/shutters/debug) Got 21.78°C and 17.36lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:26:04: (core/shutters/debug) Got 21.78°C and 17.09lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:26:14: (core/shutters/debug) Got 21.78°C and 17.5lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:26:24: (core/shutters/debug) Got 21.78°C and 17.77lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:26:34: (core/shutters/debug) Got 21.78°C and 17.23lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:26:44: (core/shutters/debug) Got 20.8°C and 17.23lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:26:55: (core/shutters/debug) Got 21.78°C and 17.23lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:27:05: (core/shutters/debug) Got 21.78°C and 17.23lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:27:15: (core/shutters/debug) Got 21.78°C and 17.91lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:27:25: (core/shutters/debug) Got 21.78°C and 17.91lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:27:36: (core/shutters/debug) Got 21.78°C and 17.77lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:27:46: (core/shutters/debug) Got 21.78°C and 17.64lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:27:56: (core/shutters/debug) Got 22.27°C and 17.77lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:28:06: (core/shutters/debug) Got 20.8°C and 18.05lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:28:16: (core/shutters/debug) Got 21.29°C and 18.05lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:28:27: (core/shutters/debug) Got 21.78°C and 18.05lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:28:37: (core/shutters/debug) Got 22.27°C and 17.91lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:35:53: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-11:09:35:54: (arduino-com/status) CONNECT received
+2021-05-11:09:35:54: (arduino-com/status) Sending signal
+2021-05-11:09:35:54: (arduino-com/status) Sent a signal
+2021-05-11:09:35:54: (arduino-com/status) Waiting for READY
+2021-05-11:09:35:55: (arduino-com/status) READY received !
+2021-05-11:09:35:55: (core/shutters/debug) Got 22.75°C and 16.96lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:36:06: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-11:09:36:08: (arduino-com/status) CONNECT received
+2021-05-11:09:36:08: (arduino-com/status) Sending signal
+2021-05-11:09:36:08: (arduino-com/status) Sent a signal
+2021-05-11:09:36:08: (arduino-com/status) Waiting for READY
+2021-05-11:09:36:08: (arduino-com/status) READY received !
+2021-05-11:09:36:08: (core/shutters/debug) Got 22.27°C and 17.23lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:36:36: (core/shutters/debug) Got 21.29°C and 17.5lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:37:35: (core/shutters/debug) Got 21.78°C and 17.91lux. We're on the 9th hour, it is considered plain day.
+2021-05-11:09:37:44: (core/status) shutting down
+2021-05-17:10:30:35: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-17:10:30:36: (arduino-com/status) CONNECT received
+2021-05-17:10:30:36: (arduino-com/status) Sending signal
+2021-05-17:10:30:36: (arduino-com/status) Sent a signal
+2021-05-17:10:30:36: (arduino-com/status) Waiting for READY
+2021-05-17:10:30:36: (arduino-com/status) READY received !
+2021-05-17:10:30:37: (core/shutters/debug) Got 21.78°C and 14.4lux. We're on the 10th hour, it is considered plain day.
+2021-05-17:10:31:18: (core/shutters/debug) Got 21.29°C and 12.03lux. We're on the 10th hour, it is considered plain day.
+2021-05-17:10:31:26: (core/cmd/error) command "sss": syntax error: argument command: invalid choice: 'sss' (choose from 'set_setting', 'get_setting', 'force_update', 'shutdown'), see documentation
+2021-05-17:10:31:44: (core/cmd/error) command "set-setting --user_mode 1": syntax error: argument command: invalid choice: 'set-setting' (choose from 'set_setting', 'get_setting', 'force_update', 'shutdown'), see documentation
+2021-05-17:10:31:52: (core/cmd/status) user_mode now has 1 for value
+2021-05-17:10:32:02: (core/cmd/status) user_mode now has 3 for value
+2021-05-17:10:32:02: (core/shutters/status) Closing shutters
+2021-05-17:10:32:03: (core/shutters/status) Done closing shutters
+2021-05-17:10:32:07: (core/cmd/status) user_mode now has 2 for value
+2021-05-17:10:32:07: (core/shutters/status) Opening shutters
+2021-05-17:10:32:08: (core/shutters/status) Done opening shutters
+2021-05-17:10:32:09: (core/cmd/status) user_mode now has 1 for value
+2021-05-17:10:34:13: (arduino-com/status) Waiting for Arduino's CONNECT
+2021-05-17:10:34:15: (arduino-com/status) CONNECT received
+2021-05-17:10:34:15: (arduino-com/status) Sending signal
+2021-05-17:10:34:15: (arduino-com/status) Sent a signal
+2021-05-17:10:34:15: (arduino-com/status) Waiting for READY
+2021-05-17:10:34:15: (arduino-com/status) READY received !
+2021-05-17:10:34:16: (core/shutters/debug) Got 21.78°C and 7.71lux. We're on the 10th hour, it is considered plain day.
+2021-05-17:10:34:31: (core/cmd/debug) running command _cmd_force_update with "{}" for arguments
+2021-05-17:10:34:31: (core/shutters/debug) Got 20.31°C and 18.05lux. We're on the 10th hour, it is considered plain day.
+2021-05-17:10:39:16: (core/cmd/debug) running command _cmd_force_update with "{}" for arguments
+2021-05-17:10:39:16: (core/init/error) error: WriteFile failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+Traceback (most recent call last):
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 196, in loop
+    self._update_shutters()
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 214, in _update_shutters
+    self.automatic_shutters(**self.check_luminosity_and_temp())
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\CentralUnit.py", line 219, in check_luminosity_and_temp
+    ans = self.arduino.ask(str(self.ARDUINO_GET_ENV), 2, line_ending="")
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 125, in ask
+    self.send(msg, **send_kwargs)
+  File "C:\Users\ernou\Desktop\Raphaël\Travaux\École\CNED\NSI\Terminale\Projet\Travail\Super Volet Roulant (système domotisé)\home-automation-central-unit\ArduinoSerial.py", line 58, in send
+    self.serial.write(bytes(string + line_ending, encoding))
+  File "C:\Users\ernou\AppData\Roaming\Python\Python39\site-packages\serial\serialwin32.py", line 317, in write
+    raise SerialException("WriteFile failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: WriteFile failed (PermissionError(13, 'Le périphérique ne reconnaît pas la commande.', None, 22))
+2021-05-17:10:39:16: (core/status) shutting down
